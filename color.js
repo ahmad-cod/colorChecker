@@ -1,8 +1,9 @@
-const input = document.querySelector("input");
+let input = document.querySelector("input");
 const body = document.querySelector("body");
 const divInput = document.querySelector("div")
 
 input.addEventListener('keyup', () => {
+    input.value = input.value.toLowerCase();
     body.style.background = input.value;
     if(!(body.style.background==input.value)){
         return false
@@ -11,6 +12,6 @@ input.addEventListener('keyup', () => {
         body.style.background = input.value;
         divInput.innerHTML = input.value;
    setTimeout(() => {
-       input.value= ""; }, 1000)
+       input.value= ""; }, 1100)
     }
 })
