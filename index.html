@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color PlayGround</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            background: linear-gradient(223.88deg, #848484 8.89%, #000000 94.31%);
+            transform: translate(-10%, -10%);
+        }
+        h2 {
+            color: #eee;
+        }
+
+        div {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: #ddd;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        input {
+            border-radius: 10px;
+            padding: .45rem;
+            outline: #848484;
+        }
+        input::placeholder{
+            text-align: center;
+            letter-spacing: .25rem;
+        }
+        @media screen and (max-width: 445px) {
+            body {
+                transform: translate(-10%, -30%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>colorChecker</h2>
+    <div></div>
+    <input type="text" placeholder="Color">
+    <script src="color.js"></script>
+</body>
+
+</html>
