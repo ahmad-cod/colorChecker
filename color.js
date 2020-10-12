@@ -8,8 +8,8 @@ input.addEventListener('keyup', () => {
         return false
     }
     else {
+        body.style.background = input.value;
         divInput.innerHTML = input.value;
-   body.style.background = input.value;
    setTimeout(() => {
        input.value= ""; }, 1000)
     }
